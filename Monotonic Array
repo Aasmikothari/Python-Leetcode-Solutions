@@ -1,0 +1,20 @@
+Monotonic Array
+
+https://leetcode.com/problems/monotonic-array/
+
+class Solution:
+    def isMonotonic(self, nums: List[int]) -> bool:
+	    n=len(nums)
+	    if n ==0: return True
+	    first = nums[0]
+	    last = nums[n-1]
+	    if first>last:
+		    for k in range(n-1):
+			    if nums[k]<nums[k+1]: return False
+	    elif first == last:
+		    for k in range(n-1):
+			    if nums[k]!= nums[k+1]: return False
+	    else:
+		    for k in range(n-1):
+			    if nums[k] > nums[k+1]: return False
+	    return True
