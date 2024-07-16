@@ -1,6 +1,6 @@
 Squares of Sorted Array
 
-https://leetcode.com/problems/squares-of-a-sorted-array/submissions/1300104542/
+https://leetcode.com/problems/squares-of-a-sorted-array/
 
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
